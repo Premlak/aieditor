@@ -7,8 +7,8 @@ import { useImageStore } from "@/lib/store"
 export default function Resizable() {
   const x: any = useMotionValue(0)
   const y: any = useMotionValue(0)
-  const setImageHeight = useImageStore((state) => state.setImageHeight)
-  const setImageWidth = useImageStore((state) => state.setImageWidth)
+  const setImageHeight: any = useImageStore((state) => state.setImageHeight)
+  const setImageWidth: any = useImageStore((state) => state.setImageWidth)
 
   const handleDragEnd = (e) => {}
 
